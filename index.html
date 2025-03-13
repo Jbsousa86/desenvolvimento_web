@@ -6,6 +6,36 @@
     <title>formulário de Cadastro</title>
 </head>
 <body>
-
+    <div class="box">
+        <form id="contatForm">
+            <fieldset>
+                <legend><b>Formulário</b></legend>
+                <br>
+                <div class="imputBox">
+                    <input type="text" name="nome" id="nome" class="imputUser" required>
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="imputBox">
+                    <input type="email" name="email" id="email" class="imputUser" required>
+                    <label for="email">Email</label>
+                </div>
+                <br><br>
+                <div class="imputBox">
+                    <input type="tel" name="telefone" id="telefone" class="imputUser" required>
+                    <label for="telefone">Telefone</label>
+                </div>
+                <br><br>
+                <div class="imputBox">
+                    <input type="text" name="cidade" id="cidade" class="imputUser" required>
+                    <label for="cidade">Cidade</label>
+                </div>
+                <br><br>
+                <br><br>
+                    <button type="button" class="save" onclick="saveForm()">Salvar</button>
+                    <button type="button" class="clear" onclick="limparForm()">Apagar</button>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
